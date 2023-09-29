@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_Num1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNum1"
+        android:layout_width="378dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/edt_Num1"
+        android:inputType="text"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum1" />
+
+    <TextView
+        android:id="@+id/tvNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_Num2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum1" />
+
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="372dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/edt_Num2"
+        android:inputType="text"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum2" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="32dp"
+        android:onClick="buttonClick"
+        android:text="@string/btn_plus"
+        android:textSize="34sp"
+        app:backgroundTint="@color/btnPlus"
+        app:iconTint="@color/btnPlus"
+        app:layout_constraintEnd_toStartOf="@+id/btnSub"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum2" />
+
+    <Button
+        android:id="@+id/btnSub"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:onClick="buttonClick"
+        android:text="@string/btn_minus"
+        android:textSize="34sp"
+        app:backgroundTint="@color/btnMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnMul"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:onClick="buttonClick"
+        android:text="@string/btn_multiply"
+        android:textSize="34sp"
+        app:backgroundTint="@color/btnMulitiply"
+        app:layout_constraintEnd_toStartOf="@+id/btnDev"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnDev"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:onClick="buttonClick"
+        android:text="@string/btn_devide"
+        android:textSize="34sp"
+        app:backgroundTint="@color/btnDevide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMul"
+        app:layout_constraintTop_toTopOf="@+id/btnMul" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

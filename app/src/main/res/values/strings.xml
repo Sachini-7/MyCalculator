@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyCalculator</string>
+    <string name="label_Num1">Number 01</string>
+    <string name="label_Num2">Number 02</string>
+    <string name="edt_Num1">23</string>
+    <string name="edt_Num2">12</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_multiply">x</string>
+    <string name="btn_devide">/</string>
+</resources>
